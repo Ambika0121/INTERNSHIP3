@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up Page</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color:rgb(238, 226, 228);
+        }
+
+        .container {
+            width: 600px;
+            margin: 60px;
+            padding: 30px;
+            background-color:rgb(236, 236, 189);
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px gray;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 6px 0 15px 0;
+            border-radius: 5px;
+            border: 1px solid rgb(245, 189, 198);
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: rgb(229, 177, 81);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: rgb(163, 222, 74);
+        }
+
+        iframe {
+            margin-top: 20px;
+            width: 100%;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Sign Up</h2>
+
+    <form>
+
+        <Name Fields>
+        <label>First Name</label>
+        <input type="text" required>
+
+        <label>Middle Name</label>
+        <input type="text">
+
+        <label>Last Name</label>
+        <input type="text" required>
+
+    
+        <label>Phone Number</label>
+        <input type="ph" pattern="[0-9]{10}" maxlength="10"
+               placeholder="Enter 10 digit number" required>
+
+        <Email>
+        <label>Email</label>
+        <input type="email" placeholder="Enter valid email" required>
+
+        <Address>
+        <label>Address</label>
+        <textarea rows="3" placeholder="Address Line 1&#10;Address Line 2&#10;Address Line 3" required></textarea>
+
+        <button type="submit">Register</button>
+
+    </form>
+    <div>
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/LCnO4lCWMIw?si=vkcbmN4CO_tjM0-n" 
+   title="YouTube video player" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    referrerpolicy="strict-origin-when-cross-origin" 
+    allowfullscreen></iframe>
+    </div>
+</div>
+
+</body>
+</html>
