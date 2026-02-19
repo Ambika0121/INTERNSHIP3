@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Spice Junction</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+    scroll-behavior:smooth;
+}
+
+/* Navbar */
+header{
+    background:#ff5722;
+    color:white;
+    padding:15px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav{
+    display:flex;
+    gap:20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    padding:8px 12px;
+}
+
+nav a:hover{
+    background:white;
+    color:#ff5722;
+    border-radius:5px;
+}
+
+/* Hero Section */
+.hero{
+    background:url('https://images.unsplash.com/photo-1504674900247-0877df9cc836') center/cover no-repeat;
+    height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    text-align:center;
+    flex-direction:column;
+}
+
+/* MENU */
+#menu{
+    padding:50px;
+    background:#fdf6f0;
+    text-align:center;
+}
+
+.menu-container{
+    margin-top:30px;
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.card{
+    width:230px;
+    background:white;
+    border-radius:10px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.2);
+    padding:15px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:scale(1.05);
+}
+
+.card img{
+    width:100%;
+    border-radius:10px;
+}
+
+.card button{
+    margin-top:10px;
+    padding:8px 15px;
+    background:#ff5722;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+/* Cart Section */
+#cart{
+    padding:50px;
+    background:#fff3e0;
+    text-align:center;
+}
+
+.cart-container{
+    margin-top:20px;
+    display:flex;
+    justify-content:center;
+    gap:30px;
+}
+
+.cart-item{
+    background:white;
+    padding:20px;
+    width:180px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Contact Section */
+#contact{
+    padding:50px;
+    background:#333;
+    color:white;
+    text-align:center;
+}
+
+.contact-form{
+    margin-top:20px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:10px;
+}
+
+.contact-form input, textarea{
+    width:60%;
+    padding:10px;
+}
+
+/* Footer */
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+.social{
+    margin:15px 0;
+    display:flex;
+    justify-content:center;
+    gap:25px;
+}
+
+.social a{
+    color:white;
+    text-decoration:none;
+}
+
+.social a:hover{
+    color:#ff5722;
+}
+
+iframe{
+    margin-top:15px;
+    border-radius:8px;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+<header>
+<h1>Spice Junction</h1>
+
+<nav>
+<a href="#">Home</a>
+<a href="#menu">Menu</a>
+<a href="#cart">Cart</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+<h2>Welcome to Spice Junction</h2>
+<p>Enjoy Delicious Food</p>
+</section>
+
+<!-- Menu -->
+<section id="menu">
+<h2>Our Menu</h2>
+
+<div class="menu-container">
+
+<div class="card">
+<img src="https://i.pinimg.com/1200x/af/08/ae/af08ae013ac4fa6747ce2aca276083b8.jpg">
+<h3>Biryani</h3>
+<p>₹180</p>
+<button>Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://i.pinimg.com/736x/df/11/13/df11137f7ea78702571c15bccc691eb6.jpg">
+<h3>Pizza</h3>
+<p>₹250</p>
+<button>Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://i.pinimg.com/736x/85/9a/de/859adef90e854238d9b330d0c7d2cf73.jpg">
+<h3>Burger</h3>
+<p>₹120</p>
+<button>Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://i.pinimg.com/1200x/3f/6d/c5/3f6dc54f402e686757adf664556fa899.jpg">
+<h3>Ice Cream</h3>
+<p>₹90</p>
+<button>Add to Cart</button>
+</div>
+
+</div>
+</section>
+
+<!-- Cart -->
+<section id="cart">
+<h2>Your Cart</h2>
+
+<div class="cart-container">
+<div class="cart-item">🛒 Biryani</div>
+<div class="cart-item">🛒 Pizza</div>
+<div class="cart-item">🛒 Burger</div>
+</div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+<h2>Contact Us</h2>
+
+<div class="contact-form">
+<input type="text" placeholder="Your Name">
+<input type="email" placeholder="Your Email">
+<textarea placeholder="Message"></textarea>
+<button style="padding:10px 20px;background:#ff5722;color:white;border:none;">Send</button>
+</div>
+</section>
+
+<!-- Footer -->
+<footer>
+
+<h3>Follow Us</h3>
+<div class="social">
+<a href="#">Instagram</a>
+<a href="#">Facebook</a>
+<a href="#">Twitter</a>
+</div>
+
+<h3>Our Location</h3>
+<iframe src="https://maps.google.com/maps?q=bangalore&t=&z=13&ie=UTF8&iwloc=&output=embed"
+width="80%" height="250"></iframe>
+
+<p>© 2026 Spice Junction</p>
+
+</footer>
+
+</body>
+</html>
