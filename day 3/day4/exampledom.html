@@ -79,31 +79,22 @@ button:hover{
 
 <script>
 
-let copiedText = "";   // variable to store copied text
-
-// COPY BUTTON
+let copiedText = "";   
 function copyText(){
-    copiedText = document.getElementById("t1").value;   // take text from first box
+    copiedText = document.getElementById("t1").value;  
     document.getElementById("show").innerText = "Text Copied!";
 }
 
-// PASTE BUTTON (can click many times)
+
 function pasteText(){
-    document.getElementById("t2").value += copiedText + "\n";   // add again, not replace
+    document.getElementById("t2").value += copiedText + "\n";  
 }
-// CLEAR BUTTON (clear all)
+
 function clearText(){
-
-    // clear first textarea
     document.getElementById("t1").value = "";
-
-    // clear second textarea
     document.getElementById("t2").value = "";
-
-    // clear stored copied text
     copiedText = "";
 
-    // reset message
     document.getElementById("show").innerText = "All Cleared!";
 }
 
