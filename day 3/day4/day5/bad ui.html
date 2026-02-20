@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Worst Website Ever</title>
+
+<style>
+body{
+    background: yellow;
+    font-family: Comic Sans MS;
+    color: red;
+    text-align: center;
+}
+
+/* Ugly header */
+h1{
+    background: lime;
+    color: blue;
+    font-size: 60px;
+    border: 8px dashed purple;
+}
+
+/* Random layout */
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+/* Horrible buttons */
+button{
+    background: orange;
+    color: purple;
+    font-size: 20px;
+    border: 6px dotted black;
+    padding: 20px;
+    margin: 15px;
+    cursor: pointer;
+}
+
+/* Input looks painful */
+input{
+    background: black;
+    color: lime;
+    font-size: 18px;
+    padding: 10px;
+}
+
+/* Moving text = classic bad design */
+marquee{
+    font-size: 25px;
+    color: blue;
+}
+</style>
+</head>
+
+<body>
+
+<h1>WELCOME TO MY AMAZING WEBSITE!!!</h1>
+
+<marquee scrollamount="20">🔥 BEST WEBSITE 2003 AWARD WINNER 🔥</marquee>
+
+<div class="container">
+
+<p>This website has:</p>
+<p>✔ Too many colors</p>
+<p>✔ No alignment</p>
+<p>✔ No idea what's happening</p>
+
+<input type="text" placeholder="Enter something useless">
+
+<br>
+
+<button onclick="confuse()">Click Me</button>
+<button onclick="changeColor()">Make It Worse</button>
+<button onclick="alert('You broke it 😭')">Do Not Click</button>
+
+<p id="msg"></p>
+
+</div>
+
+<script>
+function confuse(){
+    document.getElementById("msg").innerText =
+    "Congratulations! You clicked nothing important.";
+}
+
+function changeColor(){
+    let colors = ["pink","cyan","orange","lime","magenta"];
+    document.body.style.background =
+        colors[Math.floor(Math.random()*colors.length)];
+}
+</script>
+
+</body>
+</html>
